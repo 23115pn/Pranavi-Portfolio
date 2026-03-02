@@ -1,96 +1,389 @@
-/* A simple css reset */
+/*  A simple css reset  */
 body,
 html {
     margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #230c30;
+}
+
+.hr {
+    background-color: black;
+}
+
+ /* font  */
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
     padding: 0;
     height: 100%;
-    /* The Font Family- Really important!! */
-    font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
+
+.navbar {
+  overflow: hidden;
+  background-color: #871C84;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  background-color: #67197e;
+  color: #F72585;
+  
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+ background-color: #360c43;
+  color: #864598;
+}
+
+.name {
+    background-image: url("img/galaxy.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: left;
+    text-align: left;
+    font-size: 3.5rem;
+    padding-bottom: 200px;
+}
+
+.name h1 {
+  padding-top: 150px;
+  padding-left: 100px;
+  font-size: 100px;
+  margin: 0;
+  color: #F72585;
+}
+
+.name h2 {
+  padding-left: 100px;
+  font-size: 80px;
+  margin: 20px 0;
+  color: #F72585;
+}
+
+.name p {
+  padding-left: 100px;
+  padding-right: 500px;
+  font-size: 25px;
+  margin: 20px 0;
+  color: #ff4f9e;
+
+}
+
+.tagline {
+  color: #ff4f9e;
+  border-style: ridge;
+  border-radius: 200px; 
+  border-width: 10px;
+  border-color: #ff4f9e;
+  background-color: #7B1E83;
+  text-align: center;
+  margin: 90px;
+  font-size: 3rem;
+  width: 1300px;
+  height: 150px; 
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top:1px;
+  padding-bottom:10px;
+}
+
+/* likes */
+
+.likes {
+    color: #ff4f9e;
+    padding: 10px;
+    font-size: 3.5rem;
+    margin-left: 80px;
+} 
+
+.likes1 {
+    color: #ff4f9e;
+    text-align: left;
+    padding: 20px;
+    margin-left: 65px;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+.examples {
+    background-color: #230c30;
+    /* padding: 60px 8%; */
+    padding-right: 70px;
+    padding-left: 80px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.example {
+    text-align: center; /* centers the text under image */
+}
+
+.food-img {
+    background-image: url("img/chicken.jpg"); /* your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px; /* adjust size */
+    width: 400px; /* adjust size */
+    background-color: #ccc;
+    border: 8px solid #871C84;
+}
+
+.bad-img {
+    background-image: url("img/badminton.jpg"); /* your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px; /* adjust size */
+    width: 400px; /* adjust size */
+    background-color: #ccc;
+    border: 8px solid #871C84;
+}
+
+.chess-img {
+    background-image: url("img/chess.jpg"); /* your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px; /* adjust size */
+    width: 400px; /* adjust size */
+    background-color: #ccc;
+    border: 8px solid #871C84;
+}
+
+.Food, .Bad, .Chess {
+    font-size: 3rem;
+    color: #ff4f9e;
+    margin-top: 10px;
+}
+
+/* dislikes */
+
+.dislikescolour {
+    background-color: #4a2062;
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-bottom:30px;
+    width: 100%;
+}
+
+.dislikes {
+    color: #ff4f9e;
+    /* padding: 10px; */
+    font-size: 3.5rem;
+    margin-left: 80px;
+} 
+
+.dislikes1 {
+    color: #ff4f9e;
+    text-align: left;
+    padding: 20px;
+    margin-left: 65px;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+.examples {
+    background-color: #230c30;
+    /* padding: 60px 8%; */
+    padding-top: 40px;
+    padding-right: 70px;
+    padding-left: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.disexamples {
+    background-color: #4a2062;
+    /* padding: 60px 8%; */
+    padding-right: 70px;
+    padding-left: 80px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.example {
+    text-align: center; /* centers the text under image */
+}
+
+.broccoli-img {
+    background-image: url("img/Broccoli.jpg"); /* your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px; /* adjust size */
+    width: 400px; /* adjust size */
+    background-color: #ccc;
+    border: 8px solid #871C84;
+}
+
+.carrots-img {
+    background-image: url("img/carrots.jpg"); /* your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px; /* adjust size */
+    width: 400px; /* adjust size */
+    background-color: #ccc;
+    border: 8px solid #871C84;
+}
+
+.chocolate-img {
+    background-image: url("img/chocolate.avif"); /* your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px; /* adjust size */
+    width: 400px; /* adjust size */
+    background-color: #ccc;
+    border: 8px solid #871C84;
+}
+
+.Broccoli, .Carrots, .Chocolate {
+    font-size: 3rem;
+    color: #ff4f9e;
+    margin-top: 10px;
+}
+
+/* skills */
+
+.skills {
+    color: #ff4f9e;
+    padding: 4px;
+    font-size: 3rem;
+    margin: 60px;
+    padding-left: 50px;
+    width: 600px;
+    border-radius: 0.5em;
+    background-color: #67197e;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+} 
+
+/* area of the text & image */
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.skills1 {
+    color: #ff4f9e;
+    text-align: left;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 65px;
+    font-size: 20px;
+    flex:1;
+}
+
+/* skills img holder */
+.skills-img-holder {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey; 
+    width: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+/* skills image */
+.skills-img {
+    border: 4px solid #67197e;
+    display: block;
+    height:auto;
+}
+
+/* goals */
+
+.goalscolour {
+    background-color: #4a2062;
+    margin-top: 40px;
+    padding-top: 30px;
+    margin-bottom:100px;
+}
+
+.goals {
+    color: #ff4f9e;
+    padding-top: 10px;
+    font-size: 3.5rem;
+    margin-left: 80px;
+} 
+
+.goals1 {
+    color: #ff4f9e;
+    text-align: left;
+    margin-left: 65px;
+    font-size: 20px;
+    margin-right: 30px;
+    padding-bottom:20px;
+}
+
+/* facts */
+
+.fact {
+    color: #F76C6C;
+    padding: 1em;
+    text-align: center;
+    border-radius: 0.5em;
+    max-width: 100%;
+    background-color: #871C84;
+    height: 10%;
+    margin-bottom: 10px;
+} 
+
+.fact1 {
+    color: #F76C6C;
+    text-align: center;
+    margin: 100px;
+    padding-bottom: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* reset for images to ensure they ar 100% of the parent container width */
 img {
     width: 100%;
 }
 
-/* The hero section styling- use your OWN Hero Image URL here */
-.hero {
-    background-image: url('assets/placeholder-1024x1024.png');
-    height: 25vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    position: relative;
-}
-
-/* BIG text styling for the hero section text */
-.hero-text {
-    font-size: 4em;
-    font-weight: bold;
-    color: rgb(56, 4, 4);
-}
-
-/* nice big font on a banner style background */
-.topic-title{
-    color: white;
-    font-size: 2em;
-    padding: 0.1em 3em;
-    background-color: rgb(71, 71, 71);
-}
-
-/* Three column grid with a nice big gap */
-.topic-content{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 6em;
-    /* bring the whole section in off the sides of the page */
-    width: 70%;
-    /* top margin of 3em and center right/left */
-    margin: 3em auto;
-}
-
-/* Styling for the individual topic cards rounded edges background color and a drop shadow */
-.topic-card{
-    background-color: rgb(71, 71, 71);
-    color: white;
-    padding: 1em;
-    border-radius: 0.5em;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Styling for the topic card titles */
-.topic-card-text{
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-    /* center align text */
-    text-align: center;
-}
-
-.research{
-  display: flex;
-}
-
-.research-image{
- background-color: black;
- width: 50%;
- padding: 0.5em;
-}
-
-.research-text{
- width: 50%;
- padding-left: 5%;
-}
 
 
-/* Styling for a footer section to take a bit of spcae at the bottom of the page */
-.footer{
-    background-color: rgb(71, 71, 71);
-    color: white;
-    text-align: right;
-    padding: 3em 3em;
-}
